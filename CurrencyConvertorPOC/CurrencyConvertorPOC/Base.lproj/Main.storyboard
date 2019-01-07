@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConvertorPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="39" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-p7-Glq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="507" id="LEB-gx-cG1"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="BalanceSummaryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BalanceSummaryCell" rowHeight="50" id="w5U-rU-PPl" customClass="BalanceSummaryCell" customModule="CurrencyConvertorPOC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w5U-rU-PPl" id="Xnw-Zq-bHl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtA-G7-OGw" customClass="BalanceSummaryView" customModule="CurrencyConvertorPOC" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="-1" width="339" height="47.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qtA-G7-OGw" secondAttribute="bottom" constant="-5" id="5jr-9q-R67"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qtA-G7-OGw" secondAttribute="trailing" id="fWl-Ip-V3g"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="qtA-G7-OGw" secondAttribute="leading" id="lIX-UC-E13"/>
+                                                <constraint firstItem="qtA-G7-OGw" firstAttribute="top" secondItem="Xnw-Zq-bHl" secondAttribute="topMargin" constant="-9" id="wXf-fS-cPO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="balanceSummaryView" destination="qtA-G7-OGw" id="FjN-Ou-OBC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomSliderCell" rowHeight="60" id="fy8-Ma-OWT" customClass="CustomSliderCell" customModule="CurrencyConvertorPOC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fy8-Ma-OWT" id="BTM-S9-WVg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJm-4G-zmM" customClass="CustomSliderView" customModule="CurrencyConvertorPOC" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="344" height="44"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="PJm-4G-zmM" secondAttribute="leading" id="0y7-3r-PUn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PJm-4G-zmM" secondAttribute="trailing" constant="15" id="Ztl-7L-qcw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PJm-4G-zmM" secondAttribute="bottom" id="ffG-b5-GoY"/>
+                                                <constraint firstAttribute="topMargin" secondItem="PJm-4G-zmM" secondAttribute="top" id="jRK-JV-2fv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="customSliderView" destination="PJm-4G-zmM" id="4fu-Hk-0E5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="utE-mL-rav"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pSf-CR-xln"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Move slider to confirm the amount of currency you want to convert. Multiple currencies cannot be converted." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-be-6vm">
+                                <rect key="frame" x="0.0" y="531" width="375" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Cnb-aR-cgl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoc-JC-Ebc">
+                                <rect key="frame" x="16" y="602" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AQh-LV-nl1"/>
+                                </constraints>
+                                <state key="normal" title="CONVERT"/>
+                                <connections>
+                                    <action selector="convertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dA-Hd-Cga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hWI-be-6vm" secondAttribute="trailing" constant="-16" id="9G9-1W-U6a"/>
+                            <constraint firstItem="hWI-be-6vm" firstAttribute="top" secondItem="uMB-p7-Glq" secondAttribute="bottom" constant="4" id="9dv-Vx-5GO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eoc-JC-Ebc" secondAttribute="trailing" id="YNV-7N-9BN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Eoc-JC-Ebc" secondAttribute="leading" id="bc8-f0-hHP"/>
+                            <constraint firstItem="uMB-p7-Glq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="bcQ-Iz-Z7b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uMB-p7-Glq" secondAttribute="trailing" constant="-16" id="gOM-rc-nYJ"/>
+                            <constraint firstItem="uMB-p7-Glq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="k8Y-t7-rWR"/>
+                            <constraint firstItem="Eoc-JC-Ebc" firstAttribute="top" secondItem="hWI-be-6vm" secondAttribute="bottom" constant="8" id="knk-Fv-tvO"/>
+                            <constraint firstItem="hWI-be-6vm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qJX-IN-iM2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoTextView" destination="hWI-be-6vm" id="vUX-8f-4KN"/>
+                        <outlet property="pageTableView" destination="uMB-p7-Glq" id="cVP-XS-DY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+</document>

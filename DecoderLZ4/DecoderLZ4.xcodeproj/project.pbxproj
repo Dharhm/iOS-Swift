@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7E578B421A5BD8B00AB00D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E578B321A5BD8B00AB00D8 /* AppDelegate.swift */; };
+		F7E578B621A5BD8B00AB00D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E578B521A5BD8B00AB00D8 /* ViewController.swift */; };
+		F7E578B921A5BD8B00AB00D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E578B721A5BD8B00AB00D8 /* Main.storyboard */; };
+		F7E578BB21A5BD8D00AB00D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E578BA21A5BD8D00AB00D8 /* Assets.xcassets */; };
+		F7E578BE21A5BD8D00AB00D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E578BC21A5BD8D00AB00D8 /* LaunchScreen.storyboard */; };
+		F7E578C921A5BD8D00AB00D8 /* DecoderLZ4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E578C821A5BD8D00AB00D8 /* DecoderLZ4Tests.swift */; };
+		F7E578D421A5BD8D00AB00D8 /* DecoderLZ4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E578D321A5BD8D00AB00D8 /* DecoderLZ4UITests.swift */; };
+		F7E578E421A5BDB400AB00D8 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E578E221A5BDB400AB00D8 /* libcompression.tbd */; };
+		F7E578E721A5CBC700AB00D8 /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E578E621A5CBC700AB00D8 /* liblzma.tbd */; };
+		F7E578E921A5CBD100AB00D8 /* liblzma.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E578E821A5CBD100AB00D8 /* liblzma.5.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7E578C521A5BD8D00AB00D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E578A821A5BD8B00AB00D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E578AF21A5BD8B00AB00D8;
+			remoteInfo = DecoderLZ4;
+		};
+		F7E578D021A5BD8D00AB00D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E578A821A5BD8B00AB00D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E578AF21A5BD8B00AB00D8;
+			remoteInfo = DecoderLZ4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7E578B021A5BD8B00AB00D8 /* DecoderLZ4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecoderLZ4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E578B321A5BD8B00AB00D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7E578B521A5BD8B00AB00D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7E578B821A5BD8B00AB00D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7E578BA21A5BD8D00AB00D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7E578BD21A5BD8D00AB00D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7E578BF21A5BD8D00AB00D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E578C421A5BD8D00AB00D8 /* DecoderLZ4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoderLZ4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E578C821A5BD8D00AB00D8 /* DecoderLZ4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderLZ4Tests.swift; sourceTree = "<group>"; };
+		F7E578CA21A5BD8D00AB00D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E578CF21A5BD8D00AB00D8 /* DecoderLZ4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoderLZ4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E578D321A5BD8D00AB00D8 /* DecoderLZ4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderLZ4UITests.swift; sourceTree = "<group>"; };
+		F7E578D521A5BD8D00AB00D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E578E221A5BDB400AB00D8 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		F7E578E321A5BDB400AB00D8 /* libParallelCompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libParallelCompression.tbd; path = usr/lib/libParallelCompression.tbd; sourceTree = SDKROOT; };
+		F7E578E621A5CBC700AB00D8 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
+		F7E578E821A5CBD100AB00D8 /* liblzma.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.5.tbd; path = usr/lib/liblzma.5.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7E578AD21A5BD8B00AB00D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E578E921A5CBD100AB00D8 /* liblzma.5.tbd in Frameworks */,
+				F7E578E721A5CBC700AB00D8 /* liblzma.tbd in Frameworks */,
+				F7E578E421A5BDB400AB00D8 /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578C121A5BD8D00AB00D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578CC21A5BD8D00AB00D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7E578A721A5BD8B00AB00D8 = {
+			isa = PBXGroup;
+			children = (
+				F7E578B221A5BD8B00AB00D8 /* DecoderLZ4 */,
+				F7E578C721A5BD8D00AB00D8 /* DecoderLZ4Tests */,
+				F7E578D221A5BD8D00AB00D8 /* DecoderLZ4UITests */,
+				F7E578B121A5BD8B00AB00D8 /* Products */,
+				F7E578E121A5BDB400AB00D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7E578B121A5BD8B00AB00D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7E578B021A5BD8B00AB00D8 /* DecoderLZ4.app */,
+				F7E578C421A5BD8D00AB00D8 /* DecoderLZ4Tests.xctest */,
+				F7E578CF21A5BD8D00AB00D8 /* DecoderLZ4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E578B221A5BD8B00AB00D8 /* DecoderLZ4 */ = {
+			isa = PBXGroup;
+			children = (
+				F7E578B321A5BD8B00AB00D8 /* AppDelegate.swift */,
+				F7E578B521A5BD8B00AB00D8 /* ViewController.swift */,
+				F7E578B721A5BD8B00AB00D8 /* Main.storyboard */,
+				F7E578BA21A5BD8D00AB00D8 /* Assets.xcassets */,
+				F7E578BC21A5BD8D00AB00D8 /* LaunchScreen.storyboard */,
+				F7E578BF21A5BD8D00AB00D8 /* Info.plist */,
+			);
+			path = DecoderLZ4;
+			sourceTree = "<group>";
+		};
+		F7E578C721A5BD8D00AB00D8 /* DecoderLZ4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E578C821A5BD8D00AB00D8 /* DecoderLZ4Tests.swift */,
+				F7E578CA21A5BD8D00AB00D8 /* Info.plist */,
+			);
+			path = DecoderLZ4Tests;
+			sourceTree = "<group>";
+		};
+		F7E578D221A5BD8D00AB00D8 /* DecoderLZ4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E578D321A5BD8D00AB00D8 /* DecoderLZ4UITests.swift */,
+				F7E578D521A5BD8D00AB00D8 /* Info.plist */,
+			);
+			path = DecoderLZ4UITests;
+			sourceTree = "<group>";
+		};
+		F7E578E121A5BDB400AB00D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7E578E821A5CBD100AB00D8 /* liblzma.5.tbd */,
+				F7E578E621A5CBC700AB00D8 /* liblzma.tbd */,
+				F7E578E221A5BDB400AB00D8 /* libcompression.tbd */,
+				F7E578E321A5BDB400AB00D8 /* libParallelCompression.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7E578AF21A5BD8B00AB00D8 /* DecoderLZ4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E578D821A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4" */;
+			buildPhases = (
+				F7E578AC21A5BD8B00AB00D8 /* Sources */,
+				F7E578AD21A5BD8B00AB00D8 /* Frameworks */,
+				F7E578AE21A5BD8B00AB00D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecoderLZ4;
+			productName = DecoderLZ4;
+			productReference = F7E578B021A5BD8B00AB00D8 /* DecoderLZ4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7E578C321A5BD8D00AB00D8 /* DecoderLZ4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E578DB21A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4Tests" */;
+			buildPhases = (
+				F7E578C021A5BD8D00AB00D8 /* Sources */,
+				F7E578C121A5BD8D00AB00D8 /* Frameworks */,
+				F7E578C221A5BD8D00AB00D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E578C621A5BD8D00AB00D8 /* PBXTargetDependency */,
+			);
+			name = DecoderLZ4Tests;
+			productName = DecoderLZ4Tests;
+			productReference = F7E578C421A5BD8D00AB00D8 /* DecoderLZ4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7E578CE21A5BD8D00AB00D8 /* DecoderLZ4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E578DE21A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4UITests" */;
+			buildPhases = (
+				F7E578CB21A5BD8D00AB00D8 /* Sources */,
+				F7E578CC21A5BD8D00AB00D8 /* Frameworks */,
+				F7E578CD21A5BD8D00AB00D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E578D121A5BD8D00AB00D8 /* PBXTargetDependency */,
+			);
+			name = DecoderLZ4UITests;
+			productName = DecoderLZ4UITests;
+			productReference = F7E578CF21A5BD8D00AB00D8 /* DecoderLZ4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7E578A821A5BD8B00AB00D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nicson S";
+				TargetAttributes = {
+					F7E578AF21A5BD8B00AB00D8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F7E578C321A5BD8D00AB00D8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F7E578AF21A5BD8B00AB00D8;
+					};
+					F7E578CE21A5BD8D00AB00D8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F7E578AF21A5BD8B00AB00D8;
+					};
+				};
+			};
+			buildConfigurationList = F7E578AB21A5BD8B00AB00D8 /* Build configuration list for PBXProject "DecoderLZ4" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7E578A721A5BD8B00AB00D8;
+			productRefGroup = F7E578B121A5BD8B00AB00D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E578AF21A5BD8B00AB00D8 /* DecoderLZ4 */,
+				F7E578C321A5BD8D00AB00D8 /* DecoderLZ4Tests */,
+				F7E578CE21A5BD8D00AB00D8 /* DecoderLZ4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7E578AE21A5BD8B00AB00D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E578BE21A5BD8D00AB00D8 /* LaunchScreen.storyboard in Resources */,
+				F7E578BB21A5BD8D00AB00D8 /* Assets.xcassets in Resources */,
+				F7E578B921A5BD8B00AB00D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578C221A5BD8D00AB00D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578CD21A5BD8D00AB00D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E578AC21A5BD8B00AB00D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E578B621A5BD8B00AB00D8 /* ViewController.swift in Sources */,
+				F7E578B421A5BD8B00AB00D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578C021A5BD8D00AB00D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E578C921A5BD8D00AB00D8 /* DecoderLZ4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E578CB21A5BD8D00AB00D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E578D421A5BD8D00AB00D8 /* DecoderLZ4UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7E578C621A5BD8D00AB00D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E578AF21A5BD8B00AB00D8 /* DecoderLZ4 */;
+			targetProxy = F7E578C521A5BD8D00AB00D8 /* PBXContainerItemProxy */;
+		};
+		F7E578D121A5BD8D00AB00D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E578AF21A5BD8B00AB00D8 /* DecoderLZ4 */;
+			targetProxy = F7E578D021A5BD8D00AB00D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7E578B721A5BD8B00AB00D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E578B821A5BD8B00AB00D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7E578BC21A5BD8D00AB00D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E578BD21A5BD8D00AB00D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7E578D621A5BD8D00AB00D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7E578D721A5BD8D00AB00D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7E578D921A5BD8D00AB00D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7E578DA21A5BD8D00AB00D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7E578DC21A5BD8D00AB00D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecoderLZ4.app/DecoderLZ4";
+			};
+			name = Debug;
+		};
+		F7E578DD21A5BD8D00AB00D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecoderLZ4.app/DecoderLZ4";
+			};
+			name = Release;
+		};
+		F7E578DF21A5BD8D00AB00D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DecoderLZ4;
+			};
+			name = Debug;
+		};
+		F7E578E021A5BD8D00AB00D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9858M75RBY;
+				INFOPLIST_FILE = DecoderLZ4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicson.test.DecoderLZ4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DecoderLZ4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7E578AB21A5BD8B00AB00D8 /* Build configuration list for PBXProject "DecoderLZ4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E578D621A5BD8D00AB00D8 /* Debug */,
+				F7E578D721A5BD8D00AB00D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E578D821A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E578D921A5BD8D00AB00D8 /* Debug */,
+				F7E578DA21A5BD8D00AB00D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E578DB21A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E578DC21A5BD8D00AB00D8 /* Debug */,
+				F7E578DD21A5BD8D00AB00D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E578DE21A5BD8D00AB00D8 /* Build configuration list for PBXNativeTarget "DecoderLZ4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E578DF21A5BD8D00AB00D8 /* Debug */,
+				F7E578E021A5BD8D00AB00D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7E578A821A5BD8B00AB00D8 /* Project object */;
+}
